@@ -1,0 +1,29 @@
+VIM lessons 
+
+****  CCM - Command Count Motion ***
+
+ctrl+c / esc = commnad mode 
+ctrl+v - visual block mode 
+v in command mode - visual mode
+Shift+v - visual line mode
+
+j - down 
+k - up 
+l - left 
+h - right 
+
+w - next word
+b - prev word 
+
+x - delete one letter 
+dd - delete one line -c
+
+a - moves command mode cursor to insert mode in the right 
+i - moves command mode cursor to insert mode in the left 
+
+
+y - yanks (copy)-c
+p - paste 
+
+* Yanking and deleting uses the same buffer 
+

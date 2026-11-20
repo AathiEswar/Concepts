@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="text-primary-text px-6 md:px-8 lg:px-36 py-8 lg:py-16 bg-[#e5f4ed]">
+        <div   class="px-6 md:px-8 lg:px-10 py-11 bg-white relative lg:w-[94%]">
+            <div class="max-w-[95%]">
+                <p class="text-base lg:text-lg font-bold">Real-World Evidence Study: Patients with Painful DPN of the
+                    Feet<sup>3,4</sup></p><img src="/pattern_1.png" class="w-[170px] h-[7px] my-6">
+                <p class="text-lg lg:text-2xl font-bold">Patient-reported pain and pain-related sleep disturbances
+                    decreased after 4 QUTENZA treatments (n=108)</p>
+            </div>
+            <div id="real" class="relative ">
+                    <div class="w-full my-6 lg:my-16"><img src="/real-world-chart1.png" alt=""
+                            class="lg:w-[70%] relative"></div>  
+                <div>
+                    <p class="text-primary-text font-medium text-xs md:text-base mb-8 lg:mb-0 lg:max-w-[85%]">
+                    <p><b>Limitations:</b> No correlation can be made between the 2 different scales used for each endpoint.
+                        Changes for each endpoint cannot be compared on the same scale. Changes in pain intensity were
+                        measured by Average Pain Intensity (Mean mm Visual Analogue Scale). Changes in pain-related sleep
+                        disturbances were measured by Mean Modified Pain Disability Index, Sleep, Visual Analogue Scale
+                        (mm).</p>   
+                    </div> 
+                    <div id="card"
+                        class="lg:absolute lg:right-[-20%] xl:right-[-11%] lg:top-0 lg:-translate-y-1/2 p-6 lg:p-10 pl-12 px-4 lg:px-12 bg-[#058556] flex items-center justify-center mx-auto text-primary-text w-full mb-6 lg:mb-0 my-4 lg:w-[33%] md:min-w-64">
+                        <img src="/curved_arrow@2x.png"
+                            class="-rotate-90 h-[35px] lg:top-vertical -left-4 my-auto absolute flex">
+                        <p class="text-white md:text-xl w-full">Patients who received 4 treatments reported an <b>86%
+                                decrease</b> in pain levels and an <b>84% decrease</b> in pain-related sleep disturbances.
+                        </p>
+                    </div>
+                <div>
+                    <p class="text-xs mt-4">*mPDI is an assessment tool encompassing various life domains graded from 0 (not
+                        affected at all) to 100 (total impairment), thereby measuring the impact of pain on daily
+                        functioning, QoL, and sleep (mPDI-6).<br>†Visual Analogue Scale is a unidimensional measure used to
+                        evaluate pain intensity.</p>
+                    </p>
+                    <p class="text-deep-purple font-bold text-xs md:text-base mb-0 lg:w-3/4 mt-6">See study limitations <a
+                            href="/dpn/clinical-results/#study_limitations" aria-label="study limitations"
+                            class="text-sloth-green underline">here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+   const real = document.querySelector('#real');
+const card = document.querySelector('#card');
+
+function repositionCard() {
+    card.style.top = `${real.clientHeight / 2 - card.clientHeight / 2}px`;
+}
+repositionCard();
+window.addEventListener('resize', repositionCard);
+
+
+
+</script>
+</body>
+</html>
